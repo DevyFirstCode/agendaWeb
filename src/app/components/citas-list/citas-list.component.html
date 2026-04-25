@@ -1,0 +1,20 @@
+<div class="container">
+  <h2>Lista de Citas</h2>
+  
+  <table class="tabla-citas">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre de la Cita</th>
+        <th>Fecha</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cita of citas">
+        <td>{{ cita.id }}</td>
+        <td>{{ cita.nombre }}</td>
+        <td>{{ cita.fecha | date:'dd/MM/yyyy' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
